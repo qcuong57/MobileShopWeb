@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./chitiet.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="website icon" type="png" href="../assets/img/logo_icon.png">
+    <title>New</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+            <div class="header_logo">
+                <a href="../main/trangchu.html">
+                    <img src="../assets/img/Logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="header_search">
+
+            </div>
+
+            <div class="header_icon">
+                <a href="" style="margin-left: 16px;"><i class="fa-solid fa-cart-shopping header_icon--cart"></i>
+                    <a href="../cart/cart.html" id="numberCart" class="header_icon--user-text" style="margin-right: 10px;">Giỏ hàng</a>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-user header_icon--user"></i>
+                    <a href="../login/login.html" id="login" class="header_icon--user-text">Đăng nhập
+                        <a href="../main/trangchu.html" id="logout">
+                            <button onclick="logoutUser()" >Đăng xuất</button>
+                        </a>
+                    </a>
+                </a>
+            </div>
+
+            <div class="header_icon" id="loginTest">
+
+            </div>
+        </div>
+
+        <div class="header_product">
+            <div class="header_product--main">
+                <a href="../iPhone/iPhone.html " class="header_product--main-item">
+                    <img src="../assets/img/apple.png" style="width: 50px;">
+                </a>
+                <a href="../Samsung/Samsung.html" class="header_product--main-item">
+                    <img src="../assets/img/samsung.png" style="width: 50px;">
+                </a>
+                <a href="../Xiaomi/Xiaomi.html" class="header_product--main-item">
+                    <img src="../assets/img/xiaomi.png" style="width: 50px">
+                </a>
+                <a href="../Oppo/OPPO.html" class="header_product--main-item">
+                    <img src="../assets/img/oppo.png" style="width: 50px">
+                </a>
+                <a href="../ASUS/ASUS.html" class="header_product--main-item">
+                    <img src="../assets/img/asus.png" style="width: 50px;">
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content">
+
+            </div>
+        </div>
+        <div id="button" style="margin-top: 50px; margin-bottom: 50px;">
+            <button class="tab_button" id="decs" onclick="decsButton()" style="display: none;">Mô tả</button>
+            <button class="tab_button" id="specs" onclick="specsButton()" style="display: none ;border: 1px solid #0055d4;">Thông số kỹ thuật</button>
+        </div>
+        <div id="specification">
+            <ol>
+                <li class="specification_header" style="margin-top: 30px;">Màn hình</li>
+                <table>
+                    <tr>
+                        <td>Công nghệ màn hình:</td>
+                        <td>Dynamic AMOLED 2X</td>
+                    </tr>
+                    <tr>
+                        <td>Độ phân giải:</td>
+                        <td>Chính: QXGA+ (2176 x 1812 Pixels) <br> Phụ: HD+ (2316 x 904 Pixels)</td>
+                    </tr>
+                    <tr>
+                        <td>Màn hình rộng:</td>
+                        <td>Chính 7.6" <br> Phụ 6.2" - Tần số quét 120 Hz</td>
+                    </tr>
+                    <tr>
+                        <td>Độ sáng tối đa:</td>
+                        <td>1200 nits</td>
+                    </tr>
+                    <tr>
+                        <td>Mặt kính cảm ứng</td>
+                        <td>Chính: Ultra Thin Glass <br> Phụ: Corning Gorilla Glass Victus+</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Camera sau</li>
+                <table>
+                    <tr>
+                        <td>Độ phân giải</td>
+                        <td>Chính 50 MP & Phụ 12 MP, 10 MP</td>
+                    </tr>
+                    <tr>
+                        <td>Quay phim</td>
+                        <td>HD 720p@30fps <br> FullHD 1080p@60fps <br> 4K 2160p@30fps <br> 4K 2160p@60fps <br> FullHD 1080p@30fps</td>
+                    </tr>
+                    <tr>
+                        <td>Đèn flash:</td>
+                        <td>Có</td>
+                    </tr>
+                    <tr>
+                        <td>Tính năng:</td>
+                        <td>Quay video hiển thị kép <br> Chuyên nghiệp (Pro) <br> Toàn cảnh (Panorama) <br> Chống rung quang học (OIS) <br> Quay Siêu chậm (Super Slow Motion) <br> Làm đẹp <br> Ban đêm (Night Mode) <br> Zoom quang học <br> Quay chậm (Slow
+                            Motion) <br> Trôi nhanh thời gian (Time Lapse) <br> Xóa phông <br> AI Camera <br> Hiệu ứng Bokeh <br> Góc rộng (Wide) <br> Zoom kỹ thuật số <br> Góc siêu rộng (Ultrawide) <br> Live Photo <br> Bộ lọc màu</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Camera trước</li>
+                <table>
+                    <tr>
+                        <td>Độ phân giải:</td>
+                        <td>10 MP & 4 MP</td>
+                    </tr>
+                    <tr>
+                        <td>Tính năng:</td>
+                        <td>Trôi nhanh thời gian (Time Lapse) <br> Làm đẹp <br> Quay video Full HD <br> Góc rộng (Wide) <br> Quay video HD <br> Quay video 4K <br> Xóa phông <br> Flash màn hình <br> Quay chậm (Slow Motion) <br> Live Photo <br> Chụp đêm <br>                            Bộ lọc màu</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Hệ điều hành và CPU</li>
+                <table>
+                    <tr>
+                        <td>Hệ điều hành:</td>
+                        <td>Android 12</td>
+                    </tr>
+                    <tr>
+                        <td>Chip xử lý (CPU):</td>
+                        <td>Snapdragon 8+ Gen 1 8 nhân</td>
+                    </tr>
+                    <tr>
+                        <td>Tốc độ CPU:</td>
+                        <td>1 nhân 3.18 GHz, 3 nhân 2.7 GHz & 4 nhân 2 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Chip đồ họa (GPU):</td>
+                        <td>Adreno 670</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Bộ nhớ & lưu trữ</li>
+                <table>
+                    <tr>
+                        <td>RAM:</td>
+                        <td>8 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Dung lượng lưu trữ:</td>
+                        <td>512 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Dung lượng khả dụng:</td>
+                        <td>455.4 GB</td>
+                    </tr>
+                    <tr>
+                        <td>Danh bạ:</td>
+                        <td>Không giới hạn</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Kết nối</li>
+                <table>
+                    <tr>
+                        <td>Mạng di động:</td>
+                        <td>Hỗ trợ 5G</td>
+                    </tr>
+                    <tr>
+                        <td>SIM:</td>
+                        <td>1 NANO Sim & 1 eSIM</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi:</td>
+                        <td>Wi-Fi 802.11 a/b/g/n/ac/ax <br> Wi-Fi hotspot <br> Wi-Fi MIMO</td>
+                    </tr>
+                    <tr>
+                        <td>GPS:</td>
+                        <td>BEIDOU <br> GALILEO <br> GLONASS <br> A-GPS <br> QZSS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bluetooth:</td>
+                        <td>v5.2</td>
+                    </tr>
+                    <tr>
+                        <td>Cổng kết nối sạc:</td>
+                        <td>Lightning</td>
+                    </tr>
+                    <tr>
+                        <td>Jack tai nghe:</td>
+                        <td>Lightning</td>
+                    </tr>
+                    <tr>
+                        <td>Kết nối khác:</td>
+                        <td>NFC</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Pin & sạc</li>
+                <table>
+                    <tr>
+                        <td>Dung lượng pin:</td>
+                        <td>4400 mAh</td>
+                    </tr>
+                    <tr>
+                        <td>Loại pin:</td>
+                        <td>Li-ion</td>
+                    </tr>
+                    <tr>
+                        <td>Hỗ trợ sạc tối đa:</td>
+                        <td>20 W</td>
+                    </tr>
+                    <tr>
+                        <td>Công nghệ pin:</td>
+                        <td>Sạc không dây <br> Sạc không dây MagSafe <br> Sạc pin nhanh <br> Tiết kiệm pin</td>
+                    </tr>
+                </table>
+                <li class="specification_header">Tiện ích</li>
+                <table>
+                    <tr>
+                        <td>Bảo mật nâng cao:</td>
+                        <td>Mở khóa khuôn mặt Face ID</td>
+                    </tr>
+                    <tr>
+                        <td>Tính năng đặc biệt:</td>
+                        <td>Chế độ đơn giản (Giao diện đơn giản) <br> Trợ lý ảo Samsung Bixby <br> Thu nhỏ màn hình sử dụng một tay <br> Samsung Pay <br> Màn hình luôn hiển thị AOD <br> Đa cửa sổ (chia đôi màn hình) <br> Samsung DeX (Kết nối màn hình sử dụng
+                            giao diện tương tự PC) <br> Tối ưu game (Game Booster) <br> Chế độ trẻ em (Samsung Kids) <br> Ứng dụng kép (Dual Messenger) <br> Âm thanh Dolby Atmos</td>
+                    </tr>
+                    <tr>
+                        <td>Kháng nước, bụi:</td>
+                        <td>IPX8</td>
+                    </tr>
+                    <tr>
+                        <td>Ghi âm:</td>
+                        <td>Ghi âm mặc định & Ghi âm cuộc gọi</td>
+                    </tr>
+                    <tr>
+                        <td>Xem phim:</td>
+                        <td>H.264(MPEG4-AVC)</td>
+                    </tr>
+                    <tr>
+                        <td>Nghe nhạc:</td>
+                        <td>AAC <br> ALAC <br> MP3
+                        </td>
+                    </tr>
+                </table>
+                <li class="specification_header" style="margin-bottom: 10px;">Thông tin chung</li>
+                <table>
+                    <tr>
+                        <td>Thiết kế:</td>
+                        <td>Nguyên khối</td>
+                    </tr>
+                    <tr>
+                        <td>Chất liệu:</td>
+                        <td>Khung nhôm & Mặt lưng kính cường lực</td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước, khối lượng:</td>
+                        <td>Dài 155.1 mm - Ngang 130.1 mm - Dày 6.3 mm - Nặng 263g</td>
+                    </tr>
+                    <tr>
+                        <td>Thời điểm ra mắt:</td>
+                        <td>08/2022</td>
+                    </tr>
+                </table>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-main">
+            <div class="footer-main--items">
+                <div class="footer-main-item">
+                    <header>Các chi nhánh</header>
+                    <ul>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item">
+                    <header>Hotline liên hệ</header>
+                    <ul>
+                        <li>1800 1999</li>
+                        <li>1800 1999</li>
+                        <li>1800 1999</li>
+                        <li>1800 1999</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item">
+                    <header>Google Map</header>
+                    <img src="../assets/img/SGU.png" alt="">
+                </div>
+
+            </div>
+            <div class="footer-main-description">
+                <p>©2022. Công ty cổ phần web. Được cấp phét vào ngày 01/01/1111, do Bộ Thông Tin và Truyền Thông cấp ngày 01/01/1111. Địa chỉ: 273 An Dương Vương, Phường 3, Quận 5, TP.Hồ Chí Minh. Điện thoại: 1800 1999. Email: kaka@gmail.com. Chịu trách
+                    nhiệm nội dung: KAKA</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../chitiet/chitiet.js"></script>
+    <script src="../main/trangchu.js"></script>
+    <script src="../cart/cart.js"></script>
+    <script src="../login/login.js"></script>
+</body>
+
+</html>

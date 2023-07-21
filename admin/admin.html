@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admin.css">
+    <link rel="website icon" type="icon" href="../assets/img/logo_icon.png">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="main" onload="renderProduct()">
+        <div class="header" id="loginForm">
+            
+        </div>
+
+        <div class="container">
+            <div class="container_projects">
+                <ul class="container_projects--lists">
+                    <li class="container_projects--item">
+                        <i class="fa-solid fa-folder image"></i>
+                        <div class="container_projects--item_text">Quản lý sản phẩm</div>
+                    </li>
+                    <li class="container_projects--item">
+                        <i class="fa-solid fa-folder image"></i>
+                        <div class="container_projects--item_text">Quản lý User</div>
+                    </li>
+                    <li class="container_projects--item">
+                        <i class="fa-solid fa-folder image"></i>
+                        <div class="container_projects--item_text">Quản lý đơn hàng</div>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="container_contents">
+                <li class="container_content activeContent">
+                    <header class="container_content--header">
+                        <div class="container_content--header--text">
+                            <span>Quản lý sản phẩm</span>
+                        </div>
+                    </header>
+    
+                    <div class="container_content--main">
+                        <div class="container_content--main_header">
+                            <i class="fa-solid fa-calendar-days container_content--main_header--img"></i>
+                            <h3>Danh sách sản phẩm</h3>
+                        </div>
+    
+                        <div class="container_content--main_description">
+                            <div class="container_content--main_description--plus">
+                                <button class="content">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p class="content_add">Thêm sản phẩm</p>
+                                </button>
+                            </div>
+    
+                            <div class="container_content--main_description--lists">
+                                <div class="container_content--main_description--lists_header">
+                                    <ul class="container_content--main_description--lists--items">
+                                        <li class="container_content--main_description--lists--item">ID</li>
+                                        <li class="container_content--main_description--lists--item">Ảnh</li>
+                                        <li class="container_content--main_description--lists--item">Tên sản phẩm</li>
+                                        <li class="container_content--main_description--lists--item">Hãng</li>
+                                        <li class="container_content--main_description--lists--item">Giá tiền</li>
+                                        <li class="container_content--main_description--lists--item"></li>
+                                    </ul>
+                                </div>
+    
+                                <div class="container_content--main_description--lists_content" id="product">
+    
+                                </div>
+    
+                                <div class="pagination">
+                                    <div class="pagination_back">
+                                        <i class="fa-solid fa-backward"></i>
+                                    </div>
+                                    <ul class="pagination_items" id="eachPage">
+    
+                                    </ul>
+                                    <div class="pagination_next">
+                                        <i class="fa-solid fa-forward"></i>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+    
+    
+    
+                        </div>
+                    </div>
+                </li>
+
+                <li class="container_content">
+                    <header class="container_content--header">
+                        <div class="container_content--header--text">
+                            <span>Quản lý User</span>
+                        </div>
+                    </header>
+    
+                    <div class="container_content--main">
+                        <div class="container_content--main_header">
+                            <i class="fa-solid fa-calendar-days container_content--main_header--img"></i>
+                            <h3>Danh sách User</h3>
+                        </div>
+    
+                        <div class="container_content--main_description">
+                            <div class="container_content--main_description--lists">
+                                <div class="container_content--main_description--lists_header">
+                                    <ul class="container_content--main_description--lists--users">
+                                        <li class="container_content--main_description--lists--user">ID</li>
+                                        <li class="container_content--main_description--lists--user">Tên User</li>
+                                        <li class="container_content--main_description--lists--user">Tài khoản</li>
+                                        <li class="container_content--main_description--lists--user">Mật khẩu</li>
+                                        <li class="container_content--main_description--lists--user">Ngày đăng ký</li>
+                                        <li class="container_content--main_description--lists--user"></li>
+                                    </ul>
+                                </div>
+    
+                                <div class="container_content--main_description--lists_content" id="user">
+                                    
+                                </div>
+    
+                                <div class="pagination">
+                                    <div class="pagination_back">
+                                        <i class="fa-solid fa-backward"></i>
+                                    </div>
+                                    <ul class="pagination_items" id="eachPage">
+    
+                                    </ul>
+                                    <div class="pagination_next">
+                                        <i class="fa-solid fa-forward"></i>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+    
+    
+    
+                        </div>
+                    </div>
+                </li>
+
+                <li class="container_content">
+                    <header class="container_content--header">
+                        <div class="container_content--header--text">
+                            <span>Quản lý đơn hàng</span>
+                        </div>
+                    </header>
+    
+                    <div class="container_content--main">
+                        <div class="container_content--main_header">
+                            <i class="fa-solid fa-calendar-days container_content--main_header--img"></i>
+                            <h3>Danh sách đơn hàng</h3>
+                        </div>
+    
+                        <div class="container_content--main_description">
+                            <div class="container_content--main_description--search">
+                                <select name="" id="searchOption">
+                                    <option value="ma">Tìm kiếm theo mã</option>
+                                    <option value="khachhang">Tìm kiếm theo khách hàng</option>
+                                    <option value="trangthai">Tìm kiếm theo trạng thái</option>
+                                </select>
+                                <input type="text" placeholder="Tìm kiếm......" id="search">
+                            </div>
+    
+                            <div class="container_content--main_description--lists">
+                                <div class="container_content--main_description--lists_header">
+                                    <ul class="container_content--main_description--lists--items">
+                                        <li class="container_content--main_description--lists--item">ID</li>
+                                        <li class="container_content--main_description--lists--item">Mã đơn</li>
+                                        <li class="container_content--main_description--lists--item">Tên khách hàng</li>
+                                        <li class="container_content--main_description--lists--item">Sản phẩm</li>
+                                        <li class="container_content--main_description--lists--item">Tổng tiền</li>
+                                        <li class="container_content--main_description--lists--item">Ngày mua</li>
+                                        <li class="container_content--main_description--lists--item">Trạng thái</li>
+
+                                    </ul>
+                                </div>
+    
+                                <div class="container_content--main_description--lists_content" id="donhang">
+    
+                                </div>
+    
+                                <div class="pagination">
+                                    <div class="pagination_back">
+                                        <i class="fa-solid fa-backward"></i>
+                                    </div>
+                                    <ul class="pagination_items" id="eachPage">
+    
+                                    </ul>
+                                    <div class="pagination_next">
+                                        <i class="fa-solid fa-forward"></i>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+    
+    
+    
+                        </div>
+                    </div>
+                </li>
+
+                
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="modalPlus">
+        <div class="modalContainer">
+
+            <div class="modal_close">
+                <i class='fa fa-close'></i>
+            </div>
+    
+            <header class="modal-header">
+                <div class="modal-param">
+                    Thêm sản phẩm
+                </div>
+            </header>
+
+            <div class="modal-body">
+                <label for="add" class="modal-label">
+                    <p>ID</p>
+                    <input id="add" type="text" class="modal-add" placeholder="Nhập ID" readonly>
+                </label>
+
+                <label for="image" class="modal-label">
+                    <p>Hình ảnh</p>
+                    <input type="file" id="file" class="modal-add"><br><br>
+                </label>
+
+                <label for="name" class="modal-label">
+                    <p>Tên sản phẩm</p>
+                    <input id="name" type="text" class="modal-add" placeholder="Nhập tên sản phẩm">
+                </label>
+
+                <label for="hang" class="modal-label">
+                    <p>Hãng</p>
+                    <!-- <input id="hang" type="text" class="modal-add" placeholder="Nhập hãng"> -->
+                    <select name="hangtxt" id="hang" class="modal-add">
+                        <option value="iPhone">iPhone</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="ASUS">ASUS</option>
+                        <option value="OPPO">OPPO</option>
+                        <option value="Samsung">Samsung</option>
+                    </select>
+                </label>
+
+                <label for="price" class="modal-label">
+                    <p>Giá bán</p>
+                    <input id="price" type="text" class="modal-add" placeholder="Nhập giá tiền">
+                </label>
+
+                <button class="modal-submit" onclick="themsp()">
+                    Thêm sản phẩm
+                    <i class='fa fa-check'></i>
+                </button>
+
+                
+            </div>
+
+            
+        </div>
+
+    </div>
+   
+    <div class="modalEdit">
+        <div class="modalEditor">
+
+            <div class="modal_close1">
+                <i class='fa fa-close'></i>
+            </div>
+    
+            <header class="modal-header">
+                <div class="modal-param">
+                    Sửa sản phẩm
+                </div>
+            </header>
+
+            <div class="modal-body">
+                <label for="add" class="modal-label">
+                    <p>ID</p>
+                    <input id="add1" type="text" class="modal-add" placeholder="Nhập ID" readonly>
+                </label>
+
+                <label for="image" class="modal-label">
+                    <p>Hình ảnh</p>
+                    <div id="img1">
+                        <img alt="" id="imgTest">
+                    </div>
+                    <input type="file" id="file1" class="modal-add add"><br><br>
+                </label>
+
+                <label for="name" class="modal-label">
+                    <p>Tên sản phẩm</p>
+                    <input id="name1" type="text" class="modal-add" placeholder="Nhập tên sản phẩm">
+                </label>
+
+                <label for="hang" class="modal-label">
+                    <p>Hãng</p>
+                    <select name="hangtxt" id="hang1" class="modal-add">
+                        <option value="iPhone">iPhone</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="ASUS">ASUS</option>
+                        <option value="OPPO">OPPO</option>
+                        <option value="Samsung">Samsung</option>
+                    </select>
+                </label>
+
+                <label for="price" class="modal-label">
+                    <p>Giá bán</p>
+                    <input id="price1" type="text" class="modal-add" placeholder="Nhập giá tiền">
+                </label>
+
+                <button class="modal-submit1" onclick="sua()">
+                    Hoàn tất
+                    <i class='fa fa-check'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+    <script src="../Admin/admin.js"></script>
+</body>
+
+</html>

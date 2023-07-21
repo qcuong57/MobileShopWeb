@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./trangchu.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="website icon" type="png" href="../assets/img/logo_icon.png">
+    <title>Phone Store</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+            <div class="header_logo">
+                <a href="../main/trangchu.html">
+                    <img src="../assets/img/Logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="header_search">
+                <form id="test" class="header_search--input-wrap" onchange="check();">
+                    <input type="text" name="key" id="test1" class="header_search-input" placeholder="Bạn cần tìm gì?">
+                </form>
+                <div class="header_search--icon">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="header_icon">
+                <a href="" style="margin-left: 16px;"><i class="fa-solid fa-cart-shopping header_icon--cart"></i>
+                    <a href="../cart/cart.html" id="numberCart" class="header_icon--user-text" style="margin-right: 10px;">Giỏ hàng</a>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-user header_icon--user"></i>
+                    <a href="../login/login.html" id="login" class="header_icon--user-text">Đăng nhập</a>
+                </a>
+            </div>
+        </div>
+
+        <div class="header_product">
+            <div class="header_product--main">
+                <a href="../iPhone/iPhone.html " id="iPhoneHeader" class="header_product--main-item">
+                    <img id="apple" src="../assets/img/apple.png" style="width: 50px;">
+                </a>
+                <a href="../Samsung/Samsung.html" id="SamsungHeader" class="header_product--main-item">
+                    <img src="../assets/img/samsung.png" style="width: 75px;">
+                </a>
+                <a href="../Xiaomi/Xiaomi.html" id="XiaomiHeader" class="header_product--main-item">
+                    <img src="../assets/img/xiaomi.png" style="width: 60px">
+                </a>
+                <a href="../Oppo/OPPO.html" id="OppoHeader" class="header_product--main-item">
+                    <img src="../assets/img/oppo.png" style="width: 50px">
+                </a>
+                <a href="../ASUS/ASUS.html" id="AsusHeader" class="header_product--main-item">
+                    <img src="../assets/img/asus.png" style="width: 50px;">
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="banner">
+                <a href="../iPhone-14-Pro/index.html"><img src="../assets/img/bigbanner.gif" alt=""></a>
+            </div>
+            <div class="content_introduce">
+                <!-- Hot item-->
+                <div class="content_introduce--hot">
+                    <div class="content_introduce--hot--trend-title">
+                        <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                        <span>Xu hướng mua hàng</span>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../iPhone-14-Pro-Max/index.html">1. Iphone 14 Pro Max</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../Samsung-Galaxy-Z-Fold-4/index.html">2. Galaxy Z Fold 4</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../Xiaomi-12-Pro/index.html">3. Xiaomi 12 Pro</a>
+                    </div>
+                    
+                    <div class="content_introduct--hot-item">
+                        <a href="../Samsung-Galaxy-Z-Flip-4/index.html">4. Samsung Galaxy Z Flip 4</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../Oppo-Reno8/index.html">5. Oppo Reno 8</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../iPhone-SE/index.html">6. Iphone SE</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../Samsung-Galaxy-S21-FE/index.html">7. Samsung Galaxy S21 FE</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../iPhone-13-Pro-Max/index.html">8. Iphone 13 Pro Max</a>
+                    </div>
+
+                    <div class="content_introduct--hot-item">
+                        <a href="../Asus-Zenfone-Max-Pro-M1/index.html">9. Asus Zenfone Max Pro M1</a>
+                    </div>
+                </div>
+
+                <!-- Slider item-->
+                <div class="content_introduce--slide">
+                    <div class="content_introduce--slide-items">
+                        <div onclick="back()" class="content_introduce--slide-items--prev"><i
+                                class="fa fa-angle-left test"></i></div>
+                        <div class="content_introduce--slide--items-slider">
+                            <div class="lamnen">
+                                <div class="content_introduce--slide-item">
+                                    <a href="../Samsung-Galaxy-A13/index.html" class="kakahihi active">
+                                        <img src="../assets/img/banner_1.png" alt=""
+                                            class="content_introduce--slide-items--img">
+                                    </a>
+                                    <a href="../Oppo-Find-X5-Pro/index.html" class="kakahihi">
+                                        <img src="../assets/img/banner_2.png" alt=""
+                                            class="content_introduce--slide-items--img">
+                                    </a>
+                                    <a href="../iPhone-14-Pro/index.html" class="kakahihi">
+                                        <img src="../assets/img/banner_3.png" alt=""
+                                            class="content_introduce--slide-items--img">
+                                    </a>
+                                    <a href="../Asus-Zenfone-Max-Pro-M1/index.html" class="kakahihi">
+                                        <img src="../assets/img/banner_4.png" alt=""
+                                            class="content_introduce--slide-items--img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div onclick="next()" class="content_introduce--slide-items--next"><i
+                                class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_search">
+                <p>Tìm kiếm</p>
+                <select name="" id="searchOption" onchange="checkPrice(this)">
+                    <option value="default" selected>Mặc định</option>
+                    <option value="increase">Giá tăng dần</option>
+                    <option value="decrease">Giá giảm dần</option>
+                </select>
+            </div>
+
+            <div class="content_lists mt-32" id="search">
+                <div class="content_list">
+                    <!-- Iphone -->
+                    <div class="content_lists-items showToTop delay-02">
+                        <div class="content_lists-item-header">
+                            <a href="../iPhone/iPhone.html" class="content_lists-item-iphone">
+                                <img src="../assets/img/apple.png" style="width: 70px;">
+                            </a>
+                        </div>
+
+                        <button class="content_lists-items--prev"><i class="fa fa-angle-left"></i></button>
+                        <div class="content_lists-container" id="iPhone">
+
+                        </div>
+                        <button class="content_lists-items--next">
+                            <i class="fa fa-angle-right content_lists-items--nextt"></i>
+                        </button>
+                    </div>
+
+                    <!-- Samsung -->
+                    <div class="content_lists-items showToTop delay-05">
+                        <div class="content_lists-item-header">
+                            <a href="../Samsung/Samsung.html" class="content_lists-item-iphone">
+                                <img src="../assets/img/samsung.png" style="width: 100px;">
+                            </a>
+                        </div>
+
+                        <button class="content_lists-items--prev"><i class="fa fa-angle-left"></i></button>
+                        <div class="content_lists-container" id="Samsung">
+
+                        </div>
+                        <button class="content_lists-items--next asd">
+                            <i class="fa fa-angle-right content_lists-items--nextt"></i>
+                        </button>
+                    </div>
+
+                    <div class="banner">
+                        <a href="../iPhone/iPhone.html"><img src="../assets/img/banner_blackfriday.gif" alt=""></a>
+                    </div>
+
+                    <!-- Xiaomi -->
+                    <div class="content_lists-items showToTop delay-08">
+                        <div class="content_lists-item-header">
+                            <a href="../Xiaomi/Xiaomi.html" class="content_lists-item-iphone">
+                                <img src="../assets/img/xiaomi.png" style="width: 80px">
+                            </a>
+                        </div>
+
+                        <button class="content_lists-items--prev"><i class="fa fa-angle-left"></i></button>
+                        <div class="content_lists-container" id="Xiaomi">
+
+                        </div>
+                        <button class="content_lists-items--next">
+                            <i class="fa fa-angle-right content_lists-items--nextt"></i>
+                        </button>
+                    </div>
+
+                    <!-- Oppo -->
+                    <div class="content_lists-items showToTop delay-11">
+                        <div class="content_lists-item-header">
+                            <a href="../Oppo/OPPO.html" class="content_lists-item-iphone">
+                                <img src="../assets/img/oppo.png" style="width: 80px">
+                            </a>
+                        </div>
+
+                        <button class="content_lists-items--prev"><i class="fa fa-angle-left"></i></button>
+                        <div class="content_lists-container" id="Oppo">
+
+
+                        </div>
+                        <button class="content_lists-items--next">
+                            <i class="fa fa-angle-right content_lists-items--nextt"></i>
+                        </button>
+                    </div>
+
+                    <div class="banner">
+                        <a href="../iPhone-14-Pro-Max/index.html"><img src="../assets/img/banner_blackfriday2.png" alt=""></a>
+                    </div>
+
+                    <!-- Asus -->
+                    <div class="content_lists-items showToTop delay-14">
+                        <div class="content_lists-item-header">
+                            <a href="../ASUS/ASUS.html" class="content_lists-item-iphone">
+                                <img src="../assets/img/asus.png" style="width: 80px;">
+                            </a>
+                        </div>
+
+                        <button class="content_lists-items--prev"><i class="fa fa-angle-left"></i></button>
+                        <div class="content_lists-container" id="Asus">
+
+
+                        </div>
+                        <button class="content_lists-items--next">
+                            <i class="fa fa-angle-right content_lists-items--nextt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-main">
+            <div class="footer-main--items">
+                <div class="footer-main-item">
+                    <header>Các chi nhánh</header>
+                    <ul>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item">
+                    <header>Hotline liên hệ</header>
+                    <ul>
+                        <li>1800 1999</li>
+                        <li>1800 1999</li>
+                        <li>1800 1999</li>
+                        <li>1800 1999</li>
+                    </ul>
+                </div>
+                <div class="footer-main-item">
+                    <header>Google Map</header>
+                    <img src="../assets/img/SGU.png" alt="">
+                </div>
+
+            </div>
+            <div class="footer-main-description">
+                <p>©2022. Công ty cổ phần web. Được cấp phét vào ngày 01/01/1111, do Bộ Thông Tin và Truyền Thông cấp
+                    ngày 01/01/1111.
+                    Địa chỉ: 273 An Dương Vương, Phường 3, Quận 5, TP.Hồ Chí Minh. Điện thoại: 1800 1999. Email:
+                    kaka@gmail.com. Chịu trách nhiệm nội dung: KAKA</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./trangchu.js"></script>
+    <script src="../admin/admin.js"></script>
+    <script src="../cart/cart.js"></script>
+</body>
+
+</html>

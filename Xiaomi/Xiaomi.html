@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="Xiaomi.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="website icon" type="png" href="../assets/img/logo_icon.png">
+    <title>Phone Store</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header_logo">
+                <a href="../main/trangchu.html">
+                    <img src="../assets/img/Logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="header_search">
+
+            </div>
+
+            <div class="header_icon">
+                <a href="" style="margin-left: 16px;"><i class="fa-solid fa-cart-shopping header_icon--cart"></i>
+                    <a href="../cart/cart.html" id="numberCart" class="header_icon--user-text" style="margin-right: 10px;">Giỏ hàng</a>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-user header_icon--user"></i>
+                    <a href="../login/login.html" id="login" class="header_icon--user-text">Đăng nhập</a>
+                </a>
+            </div>
+        </div>
+
+        <div class="header_product">
+            <div class="header_product--main">
+                <a href="../iPhone/iPhone.html " class="header_product--main-item">
+                    <img src="../assets/img/apple.png" style="width: 50px;">
+                </a>
+                <a href="../Samsung/Samsung.html" class="header_product--main-item">
+                    <img src="../assets/img/samsung.png" style="width: 50px;">
+                </a>
+                <a href="../Xiaomi/Xiaomi.html" class="header_product--main-item">
+                    <img src="../assets/img/xiaomi.png" style="width: 50px">
+                </a>
+                <a href="../Oppo/OPPO.html" class="header_product--main-item">
+                    <img src="../assets/img/oppo.png" style="width: 50px">
+                </a>
+                <a href="../ASUS/ASUS.html" class="header_product--main-item">
+                    <img src="../assets/img/asus.png" style="width: 50px;">
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_productbox">
+                <div class="container_items">
+                    <a href="../Xiaomi/Xiaomi.html" class="container_item active">
+                        <span>Tất cả</span>
+                    </a>
+                    <a href="../Xiaomi-12T/index.html" class="container_item">Xiaomi 12T</a>
+                    <a href="../Xiaomi-12-Pro/index.html" class="container_item">Xiaomi 12 Pro</a>
+                    <a href="../Xiaomi-12/index.html" class="container_item">Xiaomi 12</a>
+                    <a href="../Xiaomi-11T-Pro/index.html" class="container_item">Xiaomi 11T Pro</a>
+                    <a href="../Xiaomi-11-Lite-NE/index.html" class="container_item">Xiaomi 11 Lite NE</a>
+                    <a href="../Xiaomi-Redmi-Note-11-Pro/index.html" class="container_item">Xiaomi Redmi Note 11 Pro</a>
+                </div>
+            </div>
+            <div class="container_productbox">
+                <div class="header_price">
+                    <div class="header_price--main">
+                        <p class="header_price--text">Mức giá</p>
+                        <div class="header_price--items">
+                            <button class="header_price--item header_price--item-price1">Từ 2 triệu đến 4 triệu</button>
+                            <button class="header_price--item header_price--item-price2">Trên 4 triệu</button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="container_productbox-items" id="product">
+                    <!--
+                    <li class="container_productbox-item">
+                        <a href="" class="container_productbox-item-link">
+                            <label for="">Mới</label>
+                            <div class="container_productbox-item-link--img">
+                                <img src="/assets/img/iphone-1.png" alt="">
+                            </div>
+                            <div class="container_productbox-item-link-name">
+                                <h3>iPhone 14 Pro Max</h3>
+                            </div>
+
+                            <div class="container_productbox-item-link-price">
+                                <span>99.999.999 VNĐ</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="container_productbox-item">
+                        <a href="" class="container_productbox-item-link">
+                            <label for="">Mới</label>
+                            <div class="container_productbox-item-link--img">
+                                <img src="/assets/img/iphone-1.png" alt="">
+                            </div>
+                            <div class="container_productbox-item-link-name">
+                                <h3>iPhone 14 Pro Max</h3>
+                            </div>
+
+                            <div class="container_productbox-item-link-price">
+                                <span>99.999.999 VNĐ</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="container_productbox-item">
+                        <a href="" class="container_productbox-item-link">
+                            <label for="">Mới</label>
+                            <div class="container_productbox-item-link--img">
+                                <img src="/assets/img/iphone-1.png" alt="">
+                            </div>
+                            <div class="container_productbox-item-link-name">
+                                <h3>iPhone 14 Pro Max</h3>
+                            </div>
+
+                            <div class="container_productbox-item-link-price">
+                                <span>99.999.999 VNĐ</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="container_productbox-item">
+                        <a href="" class="container_productbox-item-link">
+                            <label for="">Mới</label>
+                            <div class="container_productbox-item-link--img">
+                                <img src="/assets/img/iphone-1.png" alt="">
+                            </div>
+                            <div class="container_productbox-item-link-name">
+                                <h3>iPhone 14 Pro Max</h3>
+                            </div>
+
+                            <div class="container_productbox-item-link-price">
+                                <span>99.999.999 VNĐ</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li class="container_productbox-item">
+                        <a href="" class="container_productbox-item-link">
+                            <label for="">Mới</label>
+                            <div class="container_productbox-item-link--img">
+                                <img src="/assets/img/iphone-1.png" alt="">
+                            </div>
+                            <div class="container_productbox-item-link-name">
+                                <h3>iPhone 14 Pro Max</h3>
+                            </div>
+
+                            <div class="container_productbox-item-link-price">
+                                <span>99.999.999 VNĐ</span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <div class="pagination" id = "eachPage">
+                 <!-- <li href="" class="pagination-item activePg" id="1">
+                    <span>1</span>
+                </li>
+                <li href="" class="pagination-item" id="2">
+                    <span>2</span>
+                </li>
+                <li href="" class="pagination-item" id="3">
+                    <span>3</span>
+                </li>
+                <li href="" class="pagination-item" id="4">
+                    <span>4</span>
+                </li>  -->
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-main">
+                <div class="footer-main--items">
+                    <div class="footer-main-item">
+                        <header>Các chi nhánh</header>
+                        <ul>
+                            <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                            <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                            <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                            <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                            <li>273 An Dương Vương, Phường 3, Quận 5</li>
+                        </ul>
+                    </div>
+                    <div class="footer-main-item">
+                        <header>Hotline liên hệ</header>
+                        <ul>
+                            <li>1800 1999</li>
+                            <li>1800 1999</li>
+                            <li>1800 1999</li>
+                            <li>1800 1999</li>
+                        </ul>
+                    </div>
+                    <div class="footer-main-item">
+                        <header>Google Map</header>
+                        <img src="../assets/img/SGU.png" alt="">
+                    </div>
+                
+                </div>
+                <div class="footer-main-description">
+                    <p>©2022. Công ty cổ phần web. Được cấp phét vào ngày 01/01/1111, do Bộ Thông Tin và Truyền Thông cấp ngày 01/01/1111.
+                        Địa chỉ: 273 An Dương Vương, Phường 3, Quận 5, TP.Hồ Chí Minh. Điện thoại: 1800 1999. Email: kaka@gmail.com. Chịu trách nhiệm nội dung: KAKA</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./Xiaomi.js"></script>
+    <script src="../main/trangchu.js"></script>
+</body>
+</html>
